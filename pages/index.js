@@ -31,7 +31,7 @@ export default function Home({ guitarras, posts, curso }) {
           <div className={styles.grid}>
             {posts?.map(post => (
               <Post
-                id={post.id}
+                key={post.id}
                 post={post.attributes}
               />
             ))}
